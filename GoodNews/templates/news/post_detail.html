@@ -19,7 +19,7 @@ Post Details            <!-- Название у нас будет Post Details 
             </tr>
 
             <tr>
-               <td>{{ post_detail.post_title }}</td>
+               <td>{{ post_detail.post_title | censor }}</td>
                  <!-- Добавим специальный фильтр "Цензор" для цензурирования непотребных слов.
                 Все остальные символы превратятся в многоточие. -->
                <td>{{ post_detail.post_text | censor }}</td>
